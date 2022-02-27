@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>SVG and CSS Shapes</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
         <!-- with the rectangle, the x and y are the start of the box - the left and top -->
         <rect width="50" height="70" x="25" y="50" fill="#FF0000" />
         <!-- with the circle, the cx and cy are the centre of the circle -->
-        <circle cx="40" cy="30" r="30" fill="#00FF00" stroke="#999999" stroke-width="3"/>
+        <circle class="change" cx="40" cy="30" r="30" fill="#00FF00" stroke="#999999" stroke-width="3"/>
        <!-- with the line, x1 and y1 is the starting point of the line, and x2 and y2 is the ending point -->
         <line x1="20" y1="10" x2="180" y2="250" stroke="#0000FF" stroke-width="4"/>
         
@@ -37,7 +38,10 @@
 
         <!-- a polygon allows you to draw any shape by defining its points (similarly,a polyline allows you to draw a series of connect lines)-->
         <polygon points="100,100 150,200 50,200 0,100" fill="orange" />
+
+        <!-- you can add text through the text element -->
+        <text x="75" y="100">Hello</text>
     </svg>
-    
+
 </body>
 </html>
